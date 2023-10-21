@@ -1,34 +1,19 @@
-﻿let toggle = document.querySelector('.toggle');
+﻿let avatar = document.querySelector('.avatar');
 let menu = document.querySelector('.menu');
-toggle.onclick = function () {
-    menu.classList.toggle('active')
+avatar.onclick = function () {
+    menu.classList.avatar('active')
 }
 
 
-document.getElementById('openPopup').addEventListener('click', function () {
-    // Pop-up penceresini aç
-    openPopup();
+
+document.getElementById('openPopupButton').addEventListener('click', function () {
+    var popupContainer = document.getElementById('popupContainer');
+    popupContainer.style.display = 'block';
+
+    var closePopup = document.getElementById('closePopup');
+    closePopup.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
+    });
 });
 
-function openPopup() {
-    var popup = document.createElement('div');
-    popup.className = 'popup';
 
-    var closeBtn = document.createElement('span');
-    closeBtn.className = 'close';
-    closeBtn.innerHTML = '&times;';
-    closeBtn.addEventListener('click', function () {
-        document.body.removeChild(popup);
-    });
-
-    var popupContent = document.createElement('div');
-    popupContent.className = 'popup-content';
-    popupContent.innerHTML = '"/**/"';
-
-    popupContent.appendChild(closeBtn);
-    popup.appendChild(popupContent);
-
-    document.body.appendChild(popup);
-}
-
-/* CODE MIRROR***************************************** */
