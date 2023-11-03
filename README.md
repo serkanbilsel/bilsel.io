@@ -8,3 +8,4 @@ The most exciting part for me is the WEB3 side, as you'll see in the video. Curr
 In the future, I might create an NFT or a token that can be minted. This project can evolve into a platform to showcase my skills, or it might take a different direction. I'm leaving some of the code I've written in the comments.
 
 Best regards!"
+![WhatsApp Görsel 2023-11-02 saat 16 21 28_e5091afd](https://github.com/serkanbilsel/bilsel.io/assets/126615917/6db90678-8a6f-4370-ad20-1740eed77cd6)
