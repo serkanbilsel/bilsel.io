@@ -1,0 +1,12 @@
+﻿@model List<serkanbilsel.Models.Comment>
+
+@foreach (var comment in Model)
+{
+    <div>
+        <p>@comment.Comments</p>
+        <p>Beğeni Sayısı: @comment.LikeCount</p>
+        <a asp-action="AddLike" asp-route-commentId="@comment.Id">Beğen</a>
+    </div>
+}
+
+<a asp-action="AddComment">Yorum Ekle</a>

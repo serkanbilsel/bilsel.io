@@ -1,0 +1,10 @@
+﻿@model serkanbilsel.Models.Comment
+
+<form asp-action="AddComment" method="post">
+    <div class="form-group">
+        <label asp-for="Comments"></label>
+        <input asp-for="Comments" class="form-control" />
+        <span asp-validation-for="Comments" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Yorum Ekle</button>
+</form>

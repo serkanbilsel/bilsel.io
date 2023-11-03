@@ -1,33 +1,22 @@
-@media (max-width: 768px) {
-
- 
-}
-
-
-  
-   
-
-
 
 /* Genel stil ayarlarý */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
+
 body {
-    font-size: 1vw; /* Temel font boyutu belirleme */
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    font-size: 1vw;
     color: #ededed;
-    overflow-x: hidden; /* Yatay taþma engelleme */
-    display:flex;
-    align-items:center;
-    justify-content:center; 
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    /*BURADASIN UNUTMA*/
+    
 }
 
 /* Header */
@@ -60,7 +49,6 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     margin-left: 10px;
-   
 }
 
     .navbar a {
@@ -85,59 +73,15 @@ body {
 
 
 
-
-.me2 {
-   position:absolute;
-    top: 250px;
-    right: 380px;
-    width: 60vw; /* Ekran geniþliðinin yüzde 20'si kadar */
-    height: 60vw; /* Ekran geniþliðinin yüzde 20'si kadar */
-    max-width: 350px; /* Maksimum geniþlik ayarý */
-    max-height: 350px; /* Maksimum yükseklik ayarý */
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    box-shadow: 0 35px 45px rgba(0,0,0,015);
-    border: 5px solid #006775;
-}
-
-
-    .me2 img {
-        width: 120%; /* Fotoðrafýn geniþliðini artýrabilirsiniz */
-        height: 120%; /* Fotoðrafýn yüksekliðini artýrabilirsiniz */
-        object-fit: cover;
-        transform: translateX(20px);
-       
-    }
-    .me2::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 5px solid white; /* 1px beyaz çember oluþturur */
-        border-radius: 50%;
-        transform: translateX(20px);
-       
-       
-    }
-
-
-
-
-
-
-
-
-
 /* width: 150vw;  VW birimleri kullanarak geniþlik ayarlama
 height: 20vw; */
 .me1 {
     max-width: 100vw;
-    max-height: 100vw;
-    
+    line-height: 1.3;
+    border: 0px solid #006775;
+    padding-top: 1vw;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .me1-content {
@@ -156,17 +100,13 @@ height: 20vw; */
         font-weight: 700;
         line-height: 1.2;
         text-shadow: -10px -1px 6px #1b2735;
-        
-        
     }
 
     .me1-content h3 {
-
         width: 500%;
         font-size: 2vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
         font-weight: 700;
         color: #0078d3;
-
     }
 
 .me1 p {
@@ -179,12 +119,10 @@ height: 20vw; */
 
 
 .me1-content .btx-box {
-    
     display: flex;
     justify-content: space-between;
-    width: 345px; /* VW birimleri kullanarak geniþlik ayarlama */
-    height: 50px; /* VW birimleri kullanarak yükseklik ayarlama */
-    
+    width: 8vw; /* VW birimleri kullanarak geniþlik ayarlama */
+    height: 4vw; /* VW birimleri kullanarak yükseklik ayarlama */
 }
 
 
@@ -201,7 +139,7 @@ height: 20vw; */
     color: #white;
     text-decoration: none;
     font-size: 0.9vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
-    
+
     letter-spacing: 0.2px;
 }
 
@@ -228,10 +166,60 @@ height: 20vw; */
 
 
 
+.me1 .me2 {
+    position: absolute;
+    top: 250px;
+    right: 380px;
+    width: 60vw; /* Ekran geniþliðinin yüzde 20'si kadar */
+    height: 60vw; /* Ekran geniþliðinin yüzde 20'si kadar */
+    max-width: 350px; /* Maksimum geniþlik ayarý */
+    max-height: 350px; /* Maksimum yükseklik ayarý */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    box-shadow: 0 35px 45px rgba(0,0,0,015);
+    border: 5px solid #006775;
+}
+
+
+    .me1 .me2 img {
+        width: 120%; /* Fotoðrafýn geniþliðini artýrabilirsiniz */
+        height: 120%; /* Fotoðrafýn yüksekliðini artýrabilirsiniz */
+        object-fit: cover;
+        transform: translateX(20px);
+    }
+
+    .me1 .me2::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 5px solid white; /* 1px beyaz çember oluþturur */
+        border-radius: 50%;
+        transform: translateX(20px);
+    }
 
 
 
-    /*twitter*/
+
+
+
+
+.comment {
+   /* max-width: 500vw;
+    line-height: 1.3;
+    border: 5px solid #006775;
+}*/ 
+
+
+
+
+/*twitter*/
+
+}
 
 body {
     display: flex;
@@ -271,16 +259,231 @@ body {
 
 
 
-    .popup-content {
-        position: relative;
-        width: 55%; /* Popup pencere geniþliði, ihtiyaca göre ayarlayabilirsiniz */
-        height: 70%; /* Popup pencere maksimum yüksekliði, ihtiyaca göre ayarlayabilirsiniz */
-        background: #fff;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
+.popup-content {
+    position: relative;
+    width: 55%; /* Popup pencere geniþliði, ihtiyaca göre ayarlayabilirsiniz */
+    height: 70%; /* Popup pencere maksimum yüksekliði, ihtiyaca göre ayarlayabilirsiniz */
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/*=======
+font-size: 1vw;*/ /* Temel font boyutu belirleme */
+/*background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+color: #ededed;
+overflow-x: hidden;*/ /* Yatay taþma engelleme */
+/*display:flex;
+align-items:center;
+justify-content:center;
+min-height: 100vh;
+/
+}*/
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    font-family: Lato;
+    font-size: 2vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+    font-weight: 50px;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.navbar {
+    font-family: Lato;
+    font-weight: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navbar a {
+    font-family: Lato;
+    font-size: 1vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+    font-weight: 50px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 15px; /* Daha iyi bir görünüm için azaltýldý */
+    transition: .3s;
+}
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: #0e6aa0;
         z-index: 1;
     }
+
+
+
+
+
+
+.avatar {
+    margin-top: -120px;
+    height: 40vh;
+    width: 40vh;
+    object-fit: cover;
+    border: 1px solid #090a0f;
+    border-radius: 50%;
+    position: fixed;
+    right: 20%; /* Sað kenara yüzde 5 uzaklýkta konumlandýrma */
+    top: 35%; /* Üst kenara yüzde 10 uzaklýkta konumlandýrma */
+    z-index: -1;
+    cursor: pointer;
+    box-shadow: 0 25px 45px rgba(0,0,0,015);
+}
+
+
+
+
+
+
+
+
+/* width: 150vw;  VW birimleri kullanarak geniþlik ayarlama
+height: 20vw; */
+.me1 {
+    align-content: center;
+    height: 80vh;
+    width: 150vh;
+    display: flex;
+    align-items: center;
+    font-size: 1vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+
+    text-shadow: -8px -1px 6px #1b2735;
+}
+
+.me1-content {
+    padding: 5px 15px;
+    max-width: 900px;
+    margin: 25px 50px 150px;
+    text-shadow: 1px -5px 36px rgba(0,0,0,015);
+    box-shadow: 0 95px 45px rgba(0,0,0,015);
+}
+
+    .me1-content h1 {
+        font-size: 3vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+        font-weight: 500;
+        line-height: 1.2;
+        text-shadow: -10px -1px 6px #1b2735;
+    }
+
+    .me1-content h3 {
+        width: 500%;
+        font-size: 2vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+        font-weight: 700;
+        color: #0078d3;
+    }
+
+.me1-centent p {
+    font-weight: 900;
+    font-size: 1vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+    margin: 2.5vw 0 1vw;
+    /* VW birimleri kullanarak boþluk ayarlama */
+}
+
+
+.me1-centent .btx-box {
+    display: flex;
+    justify-content: space-between;
+    width: 28vw; /* VW birimleri kullanarak geniþlik ayarlama */
+    height: 1vw; /* VW birimleri kullanarak yükseklik ayarlama */
+}
+
+
+.btx-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1px 40px;
+    color: wheat;
+    background: transparent;
+    background: #00abf0;
+    border: 2px solid #0e6aa0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #white;
+    text-decoration: none;
+    font-size: 0.7vw; /* VW birimleri kullanarak metin boyutunu ayarlama */
+
+    letter-spacing: 1.5px;
+}
+
+    .btx-box a:nth-child(1) {
+        background: transparent;
+    }
+
+    .btx-box a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: #020b5319;
+        transition: .5s;
+        z-index: -1;
+    }
+
+    .btx-box a:hover::before {
+        width: 100%;
+    }
+
+
+
+    .btx-box a:hover,
+    .btx-box a:active {
+        color: #11082e;
+    }
+
+
+
+
+/*BUTTONNNNNN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-content {
+    position: relative;
+    width: 55%; /* Popup pencere geniþliði, ihtiyaca göre ayarlayabilirsiniz */
+    height: 70%; /* Popup pencere maksimum yüksekliði, ihtiyaca göre ayarlayabilirsiniz */
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1;
+}
 
 .close {
     position: absolute;

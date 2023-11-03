@@ -1,17 +1,13 @@
+
+
+
+
 using serkanbilsel.Data;
-using Microsoft.AspNetCore.Authentication.Twitter;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddDbContext<DatabaseContext>(); // Burada veritabaný iþlemleri için kullandýðýmýz contexti tanýtýyoruz.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<DatabaseContext>();
-
-
- 
-
 
 var app = builder.Build();
 
@@ -28,8 +24,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-app.UseAuthorization();
+
 
 app.MapControllerRoute(    // AREA EKLEDÝKTEN SONRA SCAFFOLDÝNGREADME.TXT DEN ALDIÐIMIZ KODLARI BURAYA YAPIÞTIRDIK ÇÜNKÜ AREA NIN ÇALIÞMASI ÝÇÝN BU ROUTE U EKLEMEMÝZ GEREKÝYOR
               name: "areas",
@@ -40,9 +35,5 @@ app.MapControllerRoute(    // AREA EKLEDÝKTEN SONRA SCAFFOLDÝNGREADME.TXT DEN AL
 app.MapControllerRoute( // uygulamanýn kullanacaðý routing yönlendirme ayarý
     name: "default", // route adý 
     pattern: "{controller=Home}/{action=Index}/{id?}"); // eðer adres çubuðunda
-
-
-
-
 
 app.Run();

@@ -1,0 +1,17 @@
+﻿@model List<serkanbilsel.Models.Comment>
+
+<h1>COMMENTS</h1>
+
+
+@foreach (var comment in Model)
+{
+    <div class="comment-box">
+        <p>@comment.CreateDate</p>
+        <p>@comment.Comments</p>
+        <p>Likes Count: @comment.LikeCount</p>
+        <a asp-controller="Admin" asp-action="Delete" asp-route-commentId="@comment.Id">Delete Comment</a>
+        <a asp-controller="Admin" asp-action="Approve" asp-route-commentId="@comment.Id">Approve Comment</a>
+    </div>
+
+}
+

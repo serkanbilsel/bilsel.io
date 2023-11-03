@@ -1,0 +1,42 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.wallet-info {
+    margin-bottom: 20px;
+}
+
+    .wallet-info h2 {
+        font-size: 28px;
+    }
+
+.table-container {
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+table {
+    font-size: 12px; /* Tabloyu küçültmek için font boyutunu düşürebilirsiniz */
+    border-collapse: collapse;
+    width: 100%; /* Tablonun genişliğini ayarlayabilirsiniz */
+    border: 1px solid #ccc;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #3336;
+}

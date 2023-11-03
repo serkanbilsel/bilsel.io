@@ -1,6 +1,102 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/wallet.css" rel="stylesheet" />
+    <title>Etherscan API Example</title>
+</head>
+<body>
+
+    <h1>Etherscan API Example Serkan Bilsel</h1>
+
+    <div class="wallet-info">
+        <h2>Connected Wallet: <span id="walletAddress"></span></h2>
+        <h2>ETH Balance: <span id="ethBalance"></span> ETH</h2>
+    </div>
+
+    <button id="connectWallet">Connect Wallet</button>
+    <button id="fetchAllTransactions">Fetch All Transactions</button>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction Hash</th>
+                    <th>Method</th>
+                    <th>Block No</th>
+                    <th>Age</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Value</th>
+                    <th>Txn Fee</th>
+                </tr>
+            </thead>
+            <tbody id="transactionList"></tbody>
+        </table>
+    </div>
+
+
+    <h2>Wallet Portfolio</h2>
+   
+  
+  
+        <h1>Wallet Portfolio</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Token Symbol</th>
+                    <th>Token Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Portföy bilgileri buraya gelecek -->
+            </tbody>
+        </table>
 
 
 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="~/js/wallet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
